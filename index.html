@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wadiqa Baig | AI & Cloud Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <style>
+        /* Custom font */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom gradient for hero text */
+        .hero-gradient-text {
+            background-image: linear-gradient(to right, #a855f7, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+<header class="sticky top-0 bg-white/80 backdrop-blur-md z-50 border-b border-gray-200/50">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <div class="flex-shrink-0">
+                <a href="#" class="text-2xl font-bold text-gray-900">Wadiqa Baig</a>
+            </div>
+            
+            <div class="hidden md:flex md:items-center md:space-x-8">
+                <a href="#about" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">About</a>
+                <a href="#skills" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Skills</a>
+                <a href="#experience" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Experience</a>
+                <a href="#projects" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Projects</a>
+                <a href="#certification" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Certification</a>
+                <a href="#contact" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Contact</a>
+                <a href="https://github.com/wadiqabaig/wadiqabaig/raw/main/CV_Wadiqa%20Baig.pdf" target="_blank" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-purple-600 hover:bg-purple-700 transition-colors duration-200">
+                    View CV
+                    <i data-feather="download" class="w-4 h-4 ml-2"></i>
+                </a>
+            </div>
+            
+            <div class="flex items-center md:hidden">
+                <button id="menu-btn" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-purple-500">
+                    <span class="sr-only">Open main menu</span>
+                    <i id="menu-icon-open" data-feather="menu" class="block h-6 w-6"></i>
+                    <i id="menu-icon-close" data-feather="x" class="hidden h-6 w-6"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200 bg-white">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a href="#about" class="text-gray-600 hover:bg-gray-100 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">About</a>
+            <a href="#skills" class="text-gray-600 hover:bg-gray-100 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Skills</a>
+            <a href="#experience" class="text-gray-600 hover:bg-gray-100 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Experience</a>
+            <a href="#projects" class="text-gray-600 hover:bg-gray-100 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+            <a href="#certification" class="text-gray-600 hover:bg-gray-100 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Certification</a>
+            <a href="#contact" class="text-gray-600 hover:bg-gray-100 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            <a href="https://github.com/wadiqabaig/wadiqabaig/raw/main/CV_Wadiqa%20Baig.pdf" target="_blank" class="text-gray-600 hover:bg-gray-100 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">View CV</a>
+        </div>
+    </div>
+</header>
+
+    <main>
+        <section id="home" class="min-h-[calc(100vh-64px)] flex items-center justify-center text-center px-4 py-20 bg-white">
+            <div class="max-w-4xl">
+                <span class="text-purple-600 font-semibold">Dubai, UAE</span> [cite: 2]
+                <h1 class="text-5xl md:text-7xl font-extrabold mt-4 hero-gradient-text">
+                    Hi, I'm Wadiqa Baig
+                </h1> [cite: 1]
+                <p class="text-xl md:text-2xl text-gray-600 mt-6 max-w-2xl mx-auto">
+                    Computer Science & AI Student at Murdoch University. 
+                    <br class="hidden md:block" />
+                    AWS Certified Cloud Practitioner building fast, scalable applications. [cite: 24]
+                </p>
+                <div class="mt-10 flex justify-center gap-4">
+                    <a href="https://www.linkedin.com/in/wadiqa-baig-4706a0249/" target="_blank" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-purple-600 hover:bg-purple-700 transition-all duration-200 transform hover:scale-105">
+                        <i data-feather="linkedin" class="w-5 h-5 mr-2"></i>
+                        LinkedIn
+                    </a> [cite: 2]
+                    <a href="https://github.com/wadiqabaig" target="_blank" class="inline-flex items-center px-6 py-3 border border-gray-400 text-gray-800 bg-white hover:bg-gray-100 text-base font-medium rounded-md shadow-sm transition-all duration-200 transform hover:scale-105">
+                        <i data-feather="github" class="w-5 h-5 mr-2"></i>
+                        GitHub
+                    </a> [cite: 2]
+                </div>
+            </div>
+        </section>
+        
+        <section id="about" class="py-20 md:py-32 bg-gray-50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">About Me</h2>
+                <div class="w-20 h-1 bg-purple-600 mx-auto mt-4 rounded"></div>
+                <p class="mt-8 text-lg md:text-xl text-gray-700 leading-relaxed">
+                    I am a **final-year** Bachelor of Information Technology student at Murdoch University, double majoring in Computer Science and Artificial Intelligence.  I am seeking an internship or part-time opportunity in IT, Cloud Computing, and Al, where I can apply my skills and contribute to meaningful projects. [cite: 4] I am a highly motivated and passionate individual, with strong teamwork and collaboration skills, and a positive attitude in all professional interactions. [cite: 5]
+                </p>
+            </div>
+        </section>
+
+        <section id="skills" class="py-20 md:py-32 bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 text-center">My Tech Stack</h2>
+                <div class="w-20 h-1 bg-purple-600 mx-auto mt-4 rounded"></div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mt-16">
+                    
+                    <div class="flex items-center p-4 bg-gray-100 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
+                        <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+                        <span class="ml-4 text-xl font-medium text-gray-900">Python</span>
+                    </div> [cite: 20]
+                    <div class="flex items-center p-4 bg-gray-100 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
+                        <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+                        <span class="ml-4 text-xl font-medium text-gray-900">Java</span>
+                    </div> [cite: 20]
+                    <div class="flex items-center p-4 bg-gray-100 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
+                        <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" />
+                        <span class="ml-4 text-xl font-medium text-gray-900">C</span>
+                    </div> [cite: 20]
+                     <div class="flex items-center p-4 bg-gray-100 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
+                        <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" />
+                        <span class="ml-4 text-xl font-medium text-gray-900">C++</span>
+                    </div> [cite: 20]
+                    <div class="flex items-center p-4 bg-gray-100 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
+                        <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+                        <span class="ml-4 text-xl font-medium text-gray-900">JavaScript</span>
+                    </div> [cite: 20]
+                    <div class="flex items-center p-4 bg-gray-100 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
+                        <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+                        <span class="ml-4 text-xl font-medium text-gray-900">HTML5</span>
+                    </div> [cite: 20]
+                    <div class="flex items-center p-4 bg-gray-100 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
+                        <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+                        <span class="ml-4 text-xl font-medium text-gray-900">CSS3</span>
+                    </div> [cite: 20]
+                    <div class="flex items-center p-4 bg-gray-100 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
+                        <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="SQL" />
+                        <span class="ml-4 text-xl font-medium text-gray-900">SQL</span>
+                    </div> [cite: 20]
+                    <div class="flex items-center p-4 bg-gray-100 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
+                        <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" />
+                        <span class="ml-4 text-xl font-medium text-gray-900">AWS</span>
+                    </div> [cite: 20]
+                    <div class="flex items-center p-4 bg-gray-100 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
+                        <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg" alt="MATLAB" />
+                        <span class="ml-4 text-xl font-medium text-gray-900">MATLAB</span>
+                    </div> [cite: 20]
+                    <div class="flex items-center p-4 bg-gray-100 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
+                        <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" alt="WordPress" />
+                        <span class="ml-4 text-xl font-medium text-gray-900">WordPress</span>
+                    </div> [cite: 21]
+
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="py-20 md:py-32 bg-gray-50">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 text-center">My Experience</h2>
+                <div class="w-20 h-1 bg-purple-600 mx-auto mt-4 rounded"></div>
+
+                <div class="mt-16 space-y-12">
+                    
+                    <div class="flex flex-col md:flex-row items-start gap-8">
+                        <div class="flex-shrink-0 w-full md:w-32 h-32 flex items-center justify-center bg-white rounded-lg shadow-md p-4">
+                            <img class="w-full h-full object-contain" src="https://www.uniteddelta-me.com/img/newlogo.png" alt="United Delta Logo">
+                        </div>
+                        <div class="text-left w-full">
+                            <h3 class="text-2xl font-bold text-gray-900">Cloud Solutions Intern - Internship</h3> [cite: 28]
+                            <p class="text-lg font-semibold text-purple-600">United Delta For Information Technology</p> [cite: 27]
+                            <p class="text-md text-gray-600 mb-3">Jun 2025 – Aug 2025 | Dubai, UAE</p> [cite: 29, 27]
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>Gained hands-on experience in cloud technologies and digital transformation, focusing on AWS.</li> [cite: 30]
+                                <li>Learned fundamentals of cloud computing, infrastructure, and workflow automation.</li> [cite: 31]
+                                <li>Worked on projects related to cloud adoption and serverless architectures.</li> [cite: 32]
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row items-start gap-8">
+                        <div class="flex-shrink-0 w-full md:w-32 h-32 flex items-center justify-center bg-white rounded-lg shadow-md p-4">
+                            <img class="w-full h-full object-contain" src="https://d29uiur3lqifhy.cloudfront.net/Production/SmsWebsiteAssets/webp/secure-my-scholarship-icon-blue.webp" alt="SecureMyScholarship Logo">
+                        </div>
+                        <div class="text-left w-full">
+                            <h3 class="text-2xl font-bold text-gray-900">Admissions Recruiter - Remote</h3> [cite: 34]
+                            <p class="text-lg font-semibold text-purple-600">SecureMyScholarship</p> [cite: 33]
+                            <p class="text-md text-gray-600 mb-3">Aug 2024 – Jul 2025 | Dubai, UAE</p> [cite: 38, 33]
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>Connect High school or Undergraduate for a bachelor's or master's degree.</li> [cite: 35]
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row items-start gap-8">
+                        <div class="flex-shrink-0 w-full md:w-32 h-32 flex items-center justify-center bg-white rounded-lg shadow-md p-4">
+                            <img class="w-full h-full object-contain" src="https://placehold.co/100x100/e2e8f0/334155?text=Logo" alt="The Westminster School Logo Placeholder">
+                        </div>
+                        <div class="text-left w-full">
+                            <h3 class="text-2xl font-bold text-gray-900">Behaviour Management Council</h3> [cite: 37]
+                            <p class="text-lg font-semibold text-purple-600">The Westminster School</p> [cite: 36]
+                            <p class="text-md text-gray-600 mb-3">Aug 2016 - Jul 2025 | Dubai, UAE</p> [cite: 39, 36]
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>Provide emotional and well-being support to primary and secondary school students.</li> [cite: 40]
+                                <li>Developed bonding with the students so that they feel comfortable in seeking support as needed.</li> [cite: 41]
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-20 md:py-32 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 text-center">Featured Projects</h2>
+                <div class="w-20 h-1 bg-purple-600 mx-auto mt-4 rounded"></div>
+
+                <div class="grid md:grid-cols-2 gap-10 mt-16">
+                    <div class="bg-white rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img class="h-56 w-full object-cover" src="https://placehold.co/600x400/e2e8f0/334155?text=Car+Connect+Dubai" alt="Car Connect Dubai Screenshot">
+                        <div class="p-6">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="inline-block bg-green-200 text-green-800 text-xs px-2 py-0.5 rounded-full font-semibold">Live on AWS EC2</span>
+                                <span class="inline-block bg-blue-200 text-blue-800 text-xs px-2 py-0.5 rounded-full font-semibold">WordPress</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Car Connect Dubai | Website</h3> [cite: 43]
+                            <p class="text-gray-600 mb-4">
+                                Built and launched a WordPress website hosted on Amazon EC2 to showcase a car showroom's inventory, ensuring scalability and easy content management. 
+                            </p>
+                            <a href="http://www.carconnectdubai.online/" target="_blank" class="inline-flex items-center font-medium text-purple-600 hover:text-purple-800 transition-colors duration-200">
+                                View Live Demo
+                                <i data-feather="external-link" class="w-4 h-4 ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img class="h-56 w-full object-cover" src="https://placehold.co/600x400/e2e8f0/334155?text=ML+Model+(XAI/NMF)" alt="Machine Learning Model Screenshot">
+                        <div class="p-6">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="inline-block bg-purple-200 text-purple-800 text-xs px-2 py-0.5 rounded-full font-semibold">Python</span>
+                                <span class="inline-block bg-yellow-200 text-yellow-800 text-xs px-2 py-0.5 rounded-full font-semibold">XAI & NLP</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Machine Learning Projects</h3> [cite: 45]
+                            <p class="text-gray-600 mb-4">
+                                Abalone Age Prediction (LR & RF with XAI): Predicted age categories (~89% accuracy) using Logistic Regression and Random Forest; explained decisions with SHAP & LIME. [cite: 46, 47]
+                            </p>
+                            <a href="https://github.com/wadiqabaig" target="_blank" class="inline-flex items-center font-medium text-purple-600 hover:text-purple-800 transition-colors duration-200">
+                                View on GitHub
+                                <i data-feather="github" class="w-4 h-4 ml-1"></i>
+                            </a> [cite: 45]
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certification" class="py-20 md:py-32 bg-gray-50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">My Certification</h2>
+                <div class="w-20 h-1 bg-purple-600 mx-auto mt-4 rounded"></div>
+                
+                <div class="mt-12 bg-white rounded-lg p-8 shadow-xl inline-flex flex-col md:flex-row items-center gap-8">
+                    <div class="flex-shrink-0">
+                        <img class="w-32 h-32" src="https://raw.githubusercontent.com/Sibasish784/cloud-cp-certificate/main/aws-certified-cloud-practitioner.png" alt="AWS Certified Cloud Practitioner Badge" />
+                    </div>
+                    <div class="text-left">
+                        <h3 class="text-2xl font-bold text-gray-900">AWS Certified Cloud Practitioner (CCP)</h3> [cite: 24]
+                        <p class="text-gray-700 mt-2">
+                            Validates my foundational, high-level understanding of AWS Cloud, services, and terminology.
+                        </p>
+                        <ul class="text-gray-600 mt-3 space-y-1">
+                            <li><strong>Issued:</strong> September 2025</li> [cite: 26]
+                        </ul>
+                        <a href="https://aws.amazon.com/verification" target="_blank" class="inline-flex items-center mt-4 px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-orange-600 hover:bg-orange-700 transition-colors duration-200">
+                            Verify Certification
+                            <i data-feather="external-link" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 md:py-32 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">Get In Touch</h2>
+                <div class="w-20 h-1 bg-purple-600 mx-auto mt-4 rounded"></div>
+                <p class="mt-8 text-lg md:text-xl text-gray-700 leading-relaxed">
+                    I'm actively seeking new opportunities. Whether you have a question, an internship role, or just want to connect, feel free to reach out! [cite: 4, 5]
+                </p>
+                <a href="mailto:wadiqabaig@gmail.com" class="inline-block mt-8 px-8 py-3 border border-transparent text-lg font-medium rounded-md shadow-sm text-white bg-purple-600 hover:bg-purple-700 transition-all duration-200 transform hover:scale-105">
+                    Email Me: wadiqabaig@gmail.com
+                </a> [cite: 2]
+                <div class="flex justify-center gap-8 mt-12">
+                    <a href="https://www.linkedin.com/in/wadiqa-baig-4706a0249/" target="_blank" class="text-gray-600 hover:text-purple-600 transition-colors duration-200">
+                        <i data-feather="linkedin" class="w-8 h-8"></i>
+                    </a> [cite: 2]
+                    <a href="https://github.com/wadiqabaig" target="_blank" class="text-gray-600 hover:text-purple-600 transition-colors duration-200">
+                        <i data-feather="github" class="w-8 h-8"></i>
+                    </a> [cite: 2]
+                    <a href="https://www.tiktok.com/@wadiqab" target="_blank" class="text-gray-600 hover:text-purple-600 transition-colors duration-200">
+                        <i data-feather="video" class="w-8 h-8"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-50 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center text-gray-500">
+            &copy; 2025 Wadiqa Baig. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // --- Mobile Menu Toggle ---
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIconOpen = document.getElementById('menu-icon-open');
+        const menuIconClose = document.getElementById('menu-icon-close');
+        
+        menuBtn.addEventListener('click', () => {
+            const isOpen = mobileMenu.classList.toggle('hidden');
+            menuIconOpen.classList.toggle('hidden', isOpen);
+            menuIconClose.classList.toggle('hidden', !isOpen);
+        });
+        
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a, #mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIconOpen.classList.remove('hidden');
+                menuIconClose.classList.add('hidden');
+            });
+        });
+
+        // --- Feather Icons ---
+        feather.replace();
+    </script>
+</body>
+</html>
