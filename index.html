@@ -13,6 +13,7 @@
         body {
             font-family: 'Inter', sans-serif;
         }
+        
         /* Custom gradient for hero text */
         .hero-gradient-text {
             background-image: linear-gradient(to right, #a855f7, #ec4899);
@@ -21,11 +22,78 @@
             background-clip: text;
             color: transparent;
         }
+
+        /* --- NEW: Animated Gradient Background --- */
+        .animated-gradient-bg {
+            background: linear-gradient(135deg, #f5f3ff, #eef2ff, #f5f3ff, #faf5ff);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* --- NEW: Typing Effect Cursor --- */
+        .typed-cursor {
+            opacity: 1;
+            animation: blink 0.7s infinite;
+        }
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        
+        /* --- NEW: Scroll Reveal Animation --- */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.2s ease-out, transform 2.8s ease-out;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* --- NEW: Timeline --- */
+        .timeline-container::before {
+            content: '';
+            position: absolute;
+            left: 1.25rem; /* 20px */
+            top: 1rem;
+            bottom: 1rem;
+            width: 3px;
+            background-color: #e5e7eb; /* gray-200 */
+            border-radius: 99px;
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 4rem; /* 64px */
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0.75rem; /* 12px */
+            top: 0.5rem; /* Adjust to center vertically */
+            width: 1.25rem; /* 20px */
+            height: 1.25rem; /* 20px */
+            background-color: #a855f7; /* purple-600 */
+            border: 4px solid #f9fafb; /* bg-gray-50 */
+            border-radius: 50%;
+            z-index: 10;
+        }
+        /* Specific border color for white background sections */
+        .timeline-item-white::before {
+            border-color: #ffffff; /* white */
+        }
+
     </style>
 </head>
 <body class="bg-white text-gray-800 antialiased">
 
-<header class="sticky top-0 bg-white/80 backdrop-blur-md z-50 border-b border-gray-200/50">
+<header class="sticky top-0 bg-white/80 backdrop-blur-md z-50 border-b border-gray-200/50 shadow-sm">
     <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
             <div class="flex-shrink-0">
@@ -40,7 +108,7 @@
                 <a href="#projects" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Projects</a>
                 <a href="#certification" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Certification</a>
                 <a href="#contact" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Contact</a>
-                <a href="https://github.com/wadiqabaig/wadiqabaig/raw/main/CV_Wadiqa%20Baig.pdf" target="_blank" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-purple-600 hover:bg-purple-700 transition-colors duration-200">
+                <a href="https://github.com/wadiqabaig/wadiqabaig/raw/main/CV_Wadiqa%20Baig.pdf" target="_blank" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-purple-600 hover:bg-purple-700 transition-colors duration-200 shadow-md hover:shadow-lg">
                     View CV
                     <i data-feather="download" class="w-4 h-4 ml-2"></i>
                 </a>
@@ -71,16 +139,14 @@
 </header>
 
     <main>
-        <section id="home" class="min-h-[calc(100vh-64px)] flex items-center justify-center text-center px-4 py-20 bg-white">
-            <div class="max-w-4xl">
+        <section id="home" class="min-h-[calc(100vh-64px)] flex items-center justify-center text-center px-4 py-20 animated-gradient-bg">
+            <div class="max-w-4xl reveal visible"> <!-- Start visible -->
                 <span class="text-purple-600 font-semibold">Dubai, UAE</span>
                 <h1 class="text-5xl md:text-7xl font-extrabold mt-4 hero-gradient-text">
                     Hi, I'm Wadiqa Baig
                 </h1>
-                <p class="text-xl md:text-2xl text-gray-600 mt-6 max-w-2xl mx-auto">
-                    Computer Science & AI Student at Murdoch University. 
-                    <br class="hidden md:block" />
-                    AWS Certified Cloud Practitioner building fast, scalable applications.
+                <p class="text-xl md:text-2xl text-gray-600 mt-6 max-w-2xl mx-auto min-h-[100px] md:min-h-[64px]">
+                    <span id="typed-text"></span><span class="typed-cursor">|</span>
                 </p>
                 <div class="mt-10 flex justify-center gap-4">
                     <a href="https://www.linkedin.com/in/wadiqa-baig-4706a0249/" target="_blank" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-purple-600 hover:bg-purple-700 transition-all duration-200 transform hover:scale-105">
@@ -96,62 +162,62 @@
         </section>
         
         <section id="about" class="py-20 md:py-32 bg-gray-50">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
                 <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">About Me</h2>
                 <div class="w-20 h-1 bg-purple-600 mx-auto mt-4 rounded"></div>
                 <p class="mt-8 text-lg md:text-xl text-gray-700 leading-relaxed">
-                    I am a **final-year** Bachelor of Information Technology student at Murdoch University, double majoring in Computer Science and Artificial Intelligence.  I am seeking an internship or part-time opportunity in IT, Cloud Computing, and Al, where I can apply my skills and contribute to meaningful projects. I am a highly motivated and passionate individual, with strong teamwork and collaboration skills, and a positive attitude in all professional interactions.
+                    I am a final-year Bachelor of Information Technology student at Murdoch University, double majoring in Computer Science and Artificial Intelligence.  I am seeking an internship or part-time opportunity in IT, Cloud Computing, and Al, where I can apply my skills and contribute to meaningful projects. I am a highly motivated and passionate individual, with strong teamwork and collaboration skills, and a positive attitude in all professional interactions.
                 </p>
             </div>
         </section>
 
         <section id="skills" class="py-20 md:py-32 bg-white">
-            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
                 <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 text-center">My Tech Stack</h2>
                 <div class="w-20 h-1 bg-purple-600 mx-auto mt-4 rounded"></div>
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mt-16">
                     
-                    <div class="flex items-center p-4 bg-gray-100 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
+                    <div class="flex items-center p-4 bg-gray-100 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/20 reveal">
                         <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
                         <span class="ml-4 text-xl font-medium text-gray-900">Python</span>
                     </div>
-                    <div class="flex items-center p-4 bg-gray-100 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
+                    <div class="flex items-center p-4 bg-gray-100 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/20 reveal">
                         <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
                         <span class="ml-4 text-xl font-medium text-gray-900">Java</span>
                     </div>
-                    <div class="flex items-center p-4 bg-gray-100 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
+                    <div class="flex items-center p-4 bg-gray-100 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/20 reveal">
                         <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" />
                         <span class="ml-4 text-xl font-medium text-gray-900">C</span>
                     </div>
-                     <div class="flex items-center p-4 bg-gray-100 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
+                     <div class="flex items-center p-4 bg-gray-100 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/20 reveal">
                         <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" />
                         <span class="ml-4 text-xl font-medium text-gray-900">C++</span>
                     </div>
-                    <div class="flex items-center p-4 bg-gray-100 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
+                    <div class="flex items-center p-4 bg-gray-100 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/20 reveal">
                         <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
                         <span class="ml-4 text-xl font-medium text-gray-900">JavaScript</span>
                     </div>
-                    <div class="flex items-center p-4 bg-gray-100 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
+                    <div class="flex items-center p-4 bg-gray-100 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/20 reveal">
                         <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
                         <span class="ml-4 text-xl font-medium text-gray-900">HTML5</span>
                     </div>
-                    <div class="flex items-center p-4 bg-gray-100 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
+                    <div class="flex items-center p-4 bg-gray-100 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/20 reveal">
                         <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
                         <span class="ml-4 text-xl font-medium text-gray-900">CSS3</span>
                     </div>
-                    <div class="flex items-center p-4 bg-gray-100 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
+                    <div class="flex items-center p-4 bg-gray-100 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/20 reveal">
                         <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="SQL" />
                         <span class="ml-4 text-xl font-medium text-gray-900">SQL</span>
                    </div>
-                    <div class="flex items-center p-4 bg-gray-100 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
+                    <div class="flex items-center p-4 bg-gray-100 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/20 reveal">
                         <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" />
                         <span class="ml-4 text-xl font-medium text-gray-900">AWS</span>
                     </div>
-                    <div class="flex items-center p-4 bg-gray-100 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
+                    <div class="flex items-center p-4 bg-gray-100 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/20 reveal">
                         <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg" alt="MATLAB" />
                         <span class="ml-4 text-xl font-medium text-gray-900">MATLAB</span>
                     </div>
-                    <div class="flex items-center p-4 bg-gray-100 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
+                    <div class="flex items-center p-4 bg-gray-100 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/20 reveal">
                         <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" alt="WordPress" />
                         <span class="ml-4 text-xl font-medium text-gray-900">WordPress</span>
                     </div>
@@ -161,17 +227,17 @@
         </section>
 
         <section id="education" class="py-20 md:py-32 bg-gray-50">
-            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
                 <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 text-center">Education</h2>
                 <div class="w-20 h-1 bg-purple-600 mx-auto mt-4 rounded"></div>
 
-                <div class="mt-16 space-y-12">
+                <div class="mt-16 relative space-y-12 timeline-container">
                     
-                    <div class="flex flex-col md:flex-row items-start gap-8">
+                    <div class="flex flex-col md:flex-row items-start gap-8 timeline-item reveal">
                         <div class="flex-shrink-0 w-full md:w-32 h-32 flex items-center justify-center bg-white rounded-lg shadow-md p-4">
                             <img class="w-full h-full object-contain" src="https://tse2.mm.bing.net/th/id/OIP.4Gbtd_mIbEN7siyY0mPXoAHaHa?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Murdoch University Logo">
                         </div>
-                        <div class="text-left w-full">
+                        <div class="text-left w-full pt-2">
                             <h3 class="text-2xl font-bold text-gray-900">Bachelor of Information Technology</h3>
                             <p class="text-lg font-semibold text-purple-600">Murdoch University Dubai</p>
                             <p class="text-md text-gray-600 mb-3">2023 – 2026 (Expected)</p>
@@ -181,11 +247,11 @@
                         </div>
                     </div>
 
-                    <div class="flex flex-col md:flex-row items-start gap-8">
+                    <div class="flex flex-col md:flex-row items-start gap-8 timeline-item reveal">
                         <div class="flex-shrink-0 w-full md:w-32 h-32 flex items-center justify-center bg-white rounded-lg shadow-md p-4">
                             <img class="w-full h-full object-contain" src="https://tse4.mm.bing.net/th/id/OIP.VAzHD4iOOyGCfDN9JYvq8wAAAA?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="The Westminster School Logo">
                         </div>
-                        <div class="text-left w-full">
+                        <div class="text-left w-full pt-2">
                             <h3 class="text-2xl font-bold text-gray-900">High School Education</h3>
                             <p class="text-lg font-semibold text-purple-600">The Westminster School, Dubai</p>
                            <p class="text-md text-gray-600 mb-3">Graduated Jun 2023</p>
@@ -197,17 +263,17 @@
         </section>
 
         <section id="experience" class="py-20 md:py-32 bg-white">
-            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
                 <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 text-center">My Experience</h2>
                 <div class="w-20 h-1 bg-purple-600 mx-auto mt-4 rounded"></div>
 
-                <div class="mt-16 space-y-12">
+                <div class="mt-16 relative space-y-12 timeline-container">
                     
-                    <div class="flex flex-col md:flex-row items-start gap-8">
-                       <div class="flex-shrink-0 w-full md:w-32 h-32 flex items-center justify-center bg-white rounded-lg shadow-md p-4">
+                    <div class="flex flex-col md:flex-row items-start gap-8 timeline-item timeline-item-white reveal">
+                       <div class="flex-shrink-0 w-full md:w-32 h-32 flex items-center justify-center bg-white rounded-lg shadow-md p-4 border">
                             <img class="w-full h-full object-contain" src="https://www.uniteddelta-me.com/img/newlogo.png" alt="United Delta Logo">
                         </div>
-                        <div class="text-left w-full">
+                        <div class="text-left w-full pt-2">
                            <h3 class="text-2xl font-bold text-gray-900">Cloud Solutions Intern - Internship</h3>
                             <p class="text-lg font-semibold text-purple-600">United Delta For Information Technology</p>
                             <p class="text-md text-gray-600 mb-3">Jun 2025 – Aug 2025 | Dubai, UAE</p>
@@ -219,11 +285,11 @@
                         </div>
                     </div>
 
-                    <div class="flex flex-col md:flex-row items-start gap-8">
-                       <div class="flex-shrink-0 w-full md:w-32 h-32 flex items-center justify-center bg-white rounded-lg shadow-md p-4">
+                    <div class="flex flex-col md:flex-row items-start gap-8 timeline-item timeline-item-white reveal">
+                       <div class="flex-shrink-0 w-full md:w-32 h-32 flex items-center justify-center bg-white rounded-lg shadow-md p-4 border">
                             <img class="w-full h-full object-contain" src="https://d29uiur3lqifhy.cloudfront.net/Production/SmsWebsiteAssets/webp/secure-my-scholarship-icon-blue.webp" alt="SecureMyScholarship Logo">
                         </div>
-                        <div class="text-left w-full">
+                        <div class="text-left w-full pt-2">
                             <h3 class="text-2xl font-bold text-gray-900">Admissions Recruiter - Remote</h3>
                             <p class="text-lg font-semibold text-purple-600">SecureMyScholarship</p>
                            <p class="text-md text-gray-600 mb-3">Aug 2024 – Jul 2025 | Dubai, UAE</p>
@@ -238,12 +304,12 @@
         </section>
 
         <section id="projects" class="py-20 md:py-32 bg-gray-50">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
                 <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 text-center">Featured Projects</h2>
                <div class="w-20 h-1 bg-purple-600 mx-auto mt-4 rounded"></div>
 
                 <div class="grid md:grid-cols-2 gap-10 mt-16">
-                    <div class="bg-white rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-[1.02]">
+                    <div class="bg-white rounded-lg shadow-xl overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20 reveal">
                         <img class="h-56 w-full object-cover" src="https://placehold.co/600x400/e2e8f0/334155?text=Car+Connect+Dubai" alt="Car Connect Dubai Screenshot">
                         <div class="p-6">
                             <div class="flex items-center gap-2 mb-3">
@@ -261,7 +327,7 @@
                         </div>
                     </div>
                     
-                    <div class="bg-white rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-[1.02]">
+                    <div class="bg-white rounded-lg shadow-xl overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20 reveal">
                         <img class="h-56 w-full object-cover" src="https://placehold.co/600x400/e2e8f0/334155?text=ML+Model+(XAI/NMF)" alt="Machine Learning Model Screenshot">
                         <div class="p-6">
                            <div class="flex items-center gap-2 mb-3">
@@ -283,11 +349,11 @@
         </section>
 
         <section id="certification" class="py-20 md:py-32 bg-white">
-           <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+           <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
                 <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">My Certification</h2>
                 <div class="w-20 h-1 bg-purple-600 mx-auto mt-4 rounded"></div>
                 
-                <div class="mt-12 bg-white rounded-lg p-8 shadow-xl inline-flex flex-col md:flex-row items-center gap-8">
+                <div class="mt-12 bg-white rounded-lg p-8 shadow-xl inline-flex flex-col md:flex-row items-center gap-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20">
                     <div class="flex-shrink-0">
                         <img class="w-32 h-32" src="https://raw.githubusercontent.com/Sibasish784/cloud-cp-certificate/main/aws-certified-cloud-practitioner.png" alt="AWS Certified Cloud Practitioner Badge" />
                     </div>
@@ -309,7 +375,7 @@
         </section>
 
         <section id="contact" class="py-20 md:py-32 bg-white">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
                 <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">Get In Touch</h2>
                 <div class="w-20 h-1 bg-purple-600 mx-auto mt-4 rounded"></div>
                 <p class="mt-8 text-lg md:text-xl text-gray-700 leading-relaxed">
@@ -319,13 +385,13 @@
                     Email Me: wadiqabaig@gmail.com
                 </a>
                 <div class="flex justify-center gap-8 mt-12">
-                   <a href="https://www.linkedin.com/in/wadiqa-baig-4706a0249/" target="_blank" class="text-gray-600 hover:text-purple-600 transition-colors duration-200">
+                   <a href="https://www.linkedin.com/in/wadiqa-baig-4706a0249/" target="_blank" class="text-gray-600 hover:text-purple-600 transform transition-all duration-200 hover:scale-110">
                         <i data-feather="linkedin" class="w-8 h-8"></i>
                     </a>
-                    <a href="https://github.com/wadiqabaig" target="_blank" class="text-gray-600 hover:text-purple-600 transition-colors duration-200">
+                    <a href="https://github.com/wadiqabaig" target="_blank" class="text-gray-600 hover:text-purple-600 transform transition-all duration-200 hover:scale-110">
                         <i data-feather="github" class="w-8 h-8"></i>
                     </a>
-                    <a href="https://www.tiktok.com/@wadiqab" target="_blank" class="text-gray-600 hover:text-purple-600 transition-colors duration-200">
+                    <a href="https://www.tiktok.com/@wadiqab" target="_blank" class="text-gray-600 hover:text-purple-600 transform transition-all duration-200 hover:scale-110">
                         <i data-feather="video" class="w-8 h-8"></i>
                     </a>
                 </div>
@@ -363,6 +429,61 @@
 
         // --- Feather Icons ---
         feather.replace();
+
+        // --- NEW: Typing Effect ---
+        const typedTextSpan = document.getElementById('typed-text');
+        const textArray = [
+            "Computer Science & AI Student at Murdoch University.",
+            "AWS Certified Cloud Practitioner.",
+            "Building fast, scalable applications."
+        ];
+        const typingDelay = 50;
+        const erasingDelay = 30;
+        const newTextDelay = 1000; // Delay between current and next text
+        let textArrayIndex = 0;
+        let charIndex = 0;
+
+        function type() {
+            if (charIndex < textArray[textArrayIndex].length) {
+                typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+                charIndex++;
+                setTimeout(type, typingDelay);
+            } else {
+                setTimeout(erase, newTextDelay);
+            }
+        }
+
+        function erase() {
+            if (charIndex > 0) {
+                typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(erase, erasingDelay);
+            } else {
+                textArrayIndex++;
+                if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+                setTimeout(type, typingDelay + 1100);
+            }
+        }
+        
+        // Start on load
+        document.addEventListener("DOMContentLoaded", function() { 
+            if(textArray.length) setTimeout(type, newTextDelay + 250);
+        });
+        
+        // --- NEW: Scroll Reveal ---
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 }); // Trigger when 10% of the element is in view
+
+        // Observe all elements with the .reveal class
+        document.querySelectorAll('.reveal').forEach(el => {
+            observer.observe(el);
+        });
+
     </script>
 </body>
 </html>
