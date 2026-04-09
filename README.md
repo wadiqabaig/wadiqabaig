@@ -11,19 +11,6 @@
   </a>  
 </p>
 
----
-
-### 📊 My GitHub Activity & Stats
-
-<p align="center">
-  <img width="50%" src="https://github-readme-stats.vercel.app/api?username=wadiqabaig&show_icons=true&theme=radical&rank_icon=percentile" alt="Wadiqa Baig's GitHub Stats" />
-  <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=wadiqabaig&layout=compact&theme=radical" alt="Top Languages" />
-</p>
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=wadiqabaig&theme=react" alt="GitHub Activity Graph" />
-</p>
-
----
 
 ### 🚀 My Key Projects
 
