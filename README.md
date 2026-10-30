@@ -9,37 +9,36 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/wadiqa-baig-4706a0249/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/wadiqabaig)
 [![AWS Certified](https://img.shields.io/badge/AWS-Cloud_Practitioner-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=FF9900)](https://aws.amazon.com/verification)
-![Profile views](https://komarev.com/ghpvc/?username=wadiqabaig&style=for-the-badge&color=FF9900&label=Profile+Views)
 
 </div>
 
 ---
 
-### 🙋‍♀️ About Me
+### About Me
 
-- 🎓 Double major in **Computer Science & Artificial Intelligence** at **Murdoch University Dubai**
-- ☁️ **AWS Certified Cloud Practitioner** and member of the **AWS Cloud Club @ Murdoch Dubai**
-- 🧠 Interested in **Machine Learning, Explainable AI, NLP, Computer Vision** and **Cloud Architecture**
-- 🛠️ Currently building full-stack apps with **React, TypeScript and Node.js**
-- 🤝 Open to internships, collaborations and hackathons
+- Double major in **Computer Science & Artificial Intelligence** at **Murdoch University Dubai**
+- **AWS Certified Cloud Practitioner** and member of the **AWS Student Builder Group @ Murdoch University Dubai**
+- Interested in **Machine Learning, Explainable AI, NLP, Computer Vision** and **Cloud Architecture**
+- Currently building full-stack apps with **React, TypeScript and Node.js**
+- Open to internships, collaborations and hackathons
 
 ---
 
-### 🚀 Featured Project
+### Featured Project
 
 <table>
 <tr>
 <td width="55%" valign="top">
 
-#### 🏎️ FiltaCar — Honest eBay Listings for Salvage Car Parts
+#### FiltaCar — Honest eBay Listings for Salvage Car Parts
 An iPhone-style web app that helps a Dubai car-parts salvage seller turn messy inputs (label photos, inventory spreadsheets, donor-vehicle notes and **Arabic** yard notes) into honest eBay listing drafts for UK buyers.
 
-- 🔍 **Offline OCR** label reading with Tesseract (English + Arabic)
-- 🤖 Optional **AI second reader**; only readings that agree become facts
-- ✅ Every detail is *known*, *needs confirmation* or *cannot be claimed*, and the seller always gives final approval
-- 🧪 Tested with Vitest and Playwright end-to-end journeys
+- **Offline OCR** label reading with Tesseract (English + Arabic)
+- Optional **AI second reader**; only readings that agree become facts
+- Every detail is *known*, *needs confirmation* or *cannot be claimed*, and the seller always gives final approval
+- Tested with Vitest and Playwright end-to-end journeys
 
-🏆 Built for the eBay case study *"From Salvage Yard to Global Marketplace"* at **FutureMindz Fest** (Dubai CommerCity)
+Built for the eBay case study *"From Salvage Yard to Global Marketplace"* at **FutureMindz Fest** (Dubai CommerCity)
 
 ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
@@ -59,13 +58,13 @@ An iPhone-style web app that helps a Dubai car-parts salvage seller turn messy i
 
 ---
 
-### 🧠 Machine Learning & Data Projects
+### Machine Learning & Data Projects
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-#### 📊 Abalone Age Prediction + Explainable AI
+#### Abalone Age Prediction + Explainable AI
 Logistic Regression and Random Forest models on the UCI Abalone dataset, explained with **SHAP** (global) and **LIME** (local). Random Forest reached **~89% accuracy**. Includes a literature review of XAI in healthcare, cybersecurity and software engineering.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
@@ -78,7 +77,7 @@ Logistic Regression and Random Forest models on the UCI Abalone dataset, explain
 </td>
 <td width="50%" valign="top">
 
-#### 🦑 Squid Game Twitter Topic Modelling (NMF)
+#### Squid Game Twitter Topic Modelling (NMF)
 Unsupervised NLP on 30,000 tweets using **TF-IDF + Non-negative Matrix Factorisation**, tuned with grid search. Found **8 topics** with a best **C_v coherence of 0.7684**, visualised with pyLDAvis, heatmaps and word clouds.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
@@ -92,7 +91,7 @@ Unsupervised NLP on 30,000 tweets using **TF-IDF + Non-negative Matrix Factorisa
 <tr>
 <td width="50%" valign="top">
 
-#### 📈 DataTales — Student Performance Dashboard
+#### DataTales — Student Performance Dashboard
 A multi-page interactive **Plotly Dash** dashboard exploring how sleep, social media, diet, attendance and part-time work relate to exam scores, with live filters for gender, job status and age.
 
 ![Dash](https://img.shields.io/badge/Dash-008DE4?style=flat-square&logo=plotly&logoColor=white)
@@ -110,18 +109,18 @@ A multi-page interactive **Plotly Dash** dashboard exploring how sleep, social m
 
 ---
 
-### 🌐 Web & Cloud Projects
+### Web & Cloud Projects
 
 | Project | What it is | Stack |
 | :--- | :--- | :--- |
-| 🚗 **Car Connect Dubai** · [Demo](https://drive.google.com/file/d/1BO5lwOU04DikiEHwQ1XL_uISuYYJ6WJF/view?usp=sharing) | Car showroom website deployed and hosted on AWS | AWS EC2, WordPress, HTML, CSS, JS |
-| 🐞 **[connect() Debugger's Challenge](https://github.com/wadiqabaig/Connect-session)** | Terminal-themed game: find the bug in C code to unlock an invite to a peer tutoring session | React, TypeScript, Vite, Tailwind |
-| 🗓️ **[IT Course Planner](https://github.com/wadiqabaig/Course-Plan-Website)** | Planner for Murdoch Dubai IT students: enter completed units, get a course plan | HTML, CSS, JavaScript |
-| ☁️ **[AWS Cloud Club @ Murdoch Dubai](https://github.com/Fahadullah-dev/AWS-CC-WORK)** *(team)* | Club website plus a "Cloud Passport" app where members collect event stamps via QR codes | React, Vite, AWS Amplify |
+| **Car Connect Dubai** · [Demo](https://drive.google.com/file/d/1BO5lwOU04DikiEHwQ1XL_uISuYYJ6WJF/view?usp=sharing) | Car showroom website deployed and hosted on AWS | AWS EC2, WordPress, HTML, CSS, JS |
+| **[connect() Debugger's Challenge](https://github.com/wadiqabaig/Connect-session)** | Terminal-themed game: find the bug in C code to unlock an invite to a peer tutoring session | React, TypeScript, Vite, Tailwind |
+| **[IT Course Planner](https://github.com/wadiqabaig/Course-Plan-Website)** | Planner for Murdoch Dubai IT students: enter completed units, get a course plan | HTML, CSS, JavaScript |
+| **[AWS Student Builder Group @ Murdoch Dubai](https://github.com/Fahadullah-dev/AWS-CC-WORK)** *(team)* | Group website plus a "Cloud Passport" app where members collect event stamps via QR codes | React, Vite, AWS Amplify |
 
 ---
 
-### 🏆 Certifications
+### Certifications
 
 <table>
   <tr>
@@ -139,7 +138,7 @@ A multi-page interactive **Plotly Dash** dashboard exploring how sleep, social m
 
 ---
 
-### 💻 Tech Stack
+### Tech Stack
 
 | Category | Technologies |
 | :--- | :--- |
@@ -150,12 +149,7 @@ A multi-page interactive **Plotly Dash** dashboard exploring how sleep, social m
 
 ---
 
-### 📊 GitHub Stats
-
-<div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=wadiqabaig&show_icons=true&hide_border=true&theme=tokyonight&count_private=true" alt="GitHub stats"/>
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=wadiqabaig&layout=compact&hide_border=true&theme=tokyonight" alt="Top languages"/>
-</div>
+### GitHub Stats
 
 <div align="center">
   <img src="https://streak-stats.demolab.com?user=wadiqabaig&hide_border=true&theme=tokyonight" alt="GitHub streak"/>
@@ -165,6 +159,6 @@ A multi-page interactive **Plotly Dash** dashboard exploring how sleep, social m
 
 <div align="center">
 
-💬 **Let's connect!** Reach out on [LinkedIn](https://www.linkedin.com/in/wadiqa-baig-4706a0249/) for collaborations, internships or a chat about AI and cloud.
+**Let's connect!** Reach out on [LinkedIn](https://www.linkedin.com/in/wadiqa-baig-4706a0249/) for collaborations, internships or a chat about AI and cloud.
 
 </div>
